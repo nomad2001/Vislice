@@ -4,7 +4,7 @@
 
 * Matjaž Zaveršnik
 * Matija Pretnar
-* Matija Kocbek
+* Matija Kocbek 
 
 ## Kratek opis
 
