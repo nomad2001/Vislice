@@ -5,6 +5,7 @@
 * Matjaž Zaveršnik
 * Matija Pretnar
 * Matija Kocbek 
+* Anton Pleteršek
 
 ## Kratek opis
 
