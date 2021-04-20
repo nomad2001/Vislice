@@ -2,4 +2,4 @@
 
 ## Kratek opis
 
-To je kratek opis vislic.
+To je kratek opis vislic. 
