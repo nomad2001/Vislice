@@ -26,9 +26,21 @@
     <small>Študentje</small>
   </blockquote>
 
-  <img src="img/10.jpg" alt="Stopnja obešanosti">
+  <img src="img/{{igra.stevilo_napak()}}}.jpg" alt="Stopnja obešanosti">
 
-  <form>
+% if stanje == 'W':
+  <h3>Bravo, zmagal si!</h3>
+  <form action="/igra/" method="post">
+    <button type="submit">Nova igra</button>
+  </form>
+% elif stanje == 'X':
+  <h3>Ojoj, izgubil si.</h3>
+  <h3>Pravilno geslo je bilo {{igra.geslo()}}.</h3>
+  <form action="/igra/" method="post">
+    <button type="submit">Nova igra</button>
+  </form>
+%else:
+  <form method="POST">
     <label>Vnesi črko:
       <input type="text" name="crka">
     </label>
@@ -38,6 +50,7 @@
   <form action="/igra/" method="post">
     <button type="submit">Nova igra</button>
   </form>
+% end
 </body>
 
 </html>
