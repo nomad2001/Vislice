@@ -6,8 +6,35 @@ PRAVILNA_CRKA = '+'
 PONOVLJENA_CRKA = 'o'
 NAPACNA_CRKA = '-'
 
+ZACETEK = 'S'
 ZMAGA = 'W'
 PORAZ = 'L'
+
+class Vislice:
+    def __init__(self):
+        self.igre = {}
+        self.max_id = 0
+    
+    def prost_id_igre(self):
+        self.max_id += 1
+        return self.max_id
+
+    def nova_igra(self,):
+        nov_id = self.prost_id_igre()
+        sveza_igra = nova_igra(bazen_besed)
+
+        self.igre[nov_id] = (sveza_igra,ZACETEK)
+        return nov_id
+
+    def ugibaj(self, id_igre, crka):
+        #najdi
+        igra, _ = self.igre[id_igre]
+        #posodobi
+        novo_stanje = igra.ugibaj(crka)
+        #popravi v slovarju
+        self.igre[nov_id] = (igra,novo_stanje)
+
+        return novo_stanje
 
 class Igra:
     def __init__(self, geslo, crke=None):
