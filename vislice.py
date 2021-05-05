@@ -18,10 +18,17 @@ def pokazi_igro(id_igre):
     trenutna_igra, trenutno_stanje = vislice.igre[id_igre]
 
 
-    return bottle.template("igra.tpl",igra=trenutna_igra,stanje=trenutno_stanje)
+    return bottle.template("igra.tpl",stanje=trenutno_stanje,igra=trenutna_igra)
 
 @bottle.post("/igra/<id_igre:int>/")
 def ugibaj_na_igri(id_igre):
-    ugibana = bottle.request.forms(crka)
+    ugibana = bottle.request.forms.get("crka")
     vislice.ugibaj(id_igre,ugibana)
+
+    return bottle.redirect(f"/igra/{id_igre}/")
+
+@bottle.route("/img/<file_path:path>")
+def img_static(file_path):
+    return bottle.static_file(file_path,"img")
+
 bottle.run(reloader=True,debug=True)

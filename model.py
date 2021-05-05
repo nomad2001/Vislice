@@ -32,7 +32,7 @@ class Vislice:
         #posodobi
         novo_stanje = igra.ugibaj(crka)
         #popravi v slovarju
-        self.igre[nov_id] = (igra,novo_stanje)
+        self.igre[id_igre] = (igra,novo_stanje)
 
         return novo_stanje
 

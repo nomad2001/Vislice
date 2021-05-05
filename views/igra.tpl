@@ -20,14 +20,12 @@
   <h3>Stopnja obešenosti</h3>
   <h4>{{ igra.stevilo_napak() }}</h4>
 
-
-  <img src="img/{{ igra.stevilo_napak() }}.jpg" alt="obesanje">
   <blockquote>
     Vislice so najboljša igra za preganjanje dolgčasa (poleg tetrisa).
     <small>Študentje</small>
   </blockquote>
 
-  <img src="img/{{igra.stevilo_napak()}}}.jpg" alt="Stopnja obešanosti">
+  <img src="/img/{{igra.stevilo_napak()}}.jpg" alt="Stopnja obešanosti">
 
 % if stanje == ZMAGA:
   <h3>Bravo, zmagal si!</h3>
