@@ -1,1 +1,1 @@
-{"max_id": 4, "igre": {"1": [{"geslo": "PRIVESLATI", "crke": []}, "S"], "2": [{"geslo": "SAMOSINDIKALEN", "crke": []}, "S"], "3": [{"geslo": "SRHLJIVO", "crke": []}, "S"], "4": [{"geslo": "HUJ\u0160ALO", "crke": ["A", "B"]}, "-"]}}
+{"max_id": 6, "igre": {"1": [{"geslo": "PRIVESLATI", "crke": []}, "S"], "2": [{"geslo": "SAMOSINDIKALEN", "crke": []}, "S"], "3": [{"geslo": "SRHLJIVO", "crke": []}, "S"], "4": [{"geslo": "HUJ\u0160ALO", "crke": ["A", "B"]}, "-"], "5": [{"geslo": "PASJEVODEC", "crke": ["A"]}, "+"], "6": [{"geslo": "FOTOGRAM", "crke": ["A", "B", "C"]}, "-"]}}
